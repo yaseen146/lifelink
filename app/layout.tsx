@@ -20,7 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      {/* yaha par className update kiya hai */}
+      <body className={`${inter.className} bg-background text-foreground`}>
         <AuthProvider>
           <div className="min-h-screen flex flex-col">
             <Navbar />
